@@ -1,0 +1,28 @@
+<div>
+
+<hr>
+
+<h3>Stay in touch</h3>
+
+<iframe align="right" width="350" height="300" src="https://f2db9c26.sibforms.com/serve/MUIEAEkNBpbLblk9Jei531wzd0IJthWd7fvT3Xzl5XmqQZp-UUtVEYoV0q67vHRjaPZYIARPbp0Ks-9a_9nvKqGWo1XAlWJiFJsf-qqCpW7Q9bqOAWB8k4dCrZGiy_xdQFB_zEkQazzjaXgr-AY4A9Nkt-qyE_9Szx5nQ0228yOyHPWDg1Scd7AiOf-ID17tetI-3nU_qkZ2HuuI" frameborder="0" scrolling="no" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;">
+
+</iframe>
+
+<p>If you enjoyed this post, then don't miss out on any future posts by subscribing to my email newsletter.</p>
+
+<h3>Support my work with a coffee</h3>
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mohitshrestha" data-color="#06436e" data-emoji="☕"  data-font="Lato" data-text="Support me" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" data-height="40px" ></script>
+
+Or if you’re interested in working with me, I’m open to freelance work. You can book an appointment with me on <a href="https://calendly.com/mohitshrestha" target="_blank">Calendly</a>.
+
+<h3>Share</h3>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="rstats #py #mohitshrestha" data-show-count="false">Tweet</a>
+
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<hr>
+
+</div>

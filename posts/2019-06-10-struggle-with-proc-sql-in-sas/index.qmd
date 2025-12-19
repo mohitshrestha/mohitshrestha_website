@@ -1,0 +1,59 @@
+---
+title: "Struggle with PROC SQL in SAS"
+description: |
+  This week had a good surprise. We learned about data wrangling in SAS using SQL language. I wasn’t expecting to learn SQL in the MSBA program as the program is primarily focused on SAS and R languages.
+date: 2019-06-10
+categories: [MSBA, DataScience, Data Analytics, SAS, Coding]
+image: media/Frederick_Douglass_struggle_quotes.jpeg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+![Image source:
+https://i1.wp.com/www.quotes-compendium.com/images/quotes/Frederick_Douglass_1438470929.jpeg](media/Frederick_Douglass_struggle_quotes.jpeg){fig-alt="Image source: https://i1.wp.com/www.quotes-compendium.com/images/quotes/Frederick_Douglass_1438470929.jpeg"
+fig-align="center" width="450"}
+
+This week had a good surprise. We learned about data wrangling in SAS
+using SQL language. I wasn't expecting to learn SQL in the MSBA program
+as the program is primarily focused on SAS and R languages. So I was
+surprised and glad that we get to learn a bit of SQL as well, as it is
+the language of data science. Beside SAS, we need to know SQL to be
+successful in the real world, so having even a basic knowledge of SQL
+would be very helpful for me as I learn more and more of data analysis.
+
+The main thing that we were learning was Create Table As Select (CTAS)
+in SAS with PROC SQL. It is supposed to be pretty standard DDL, creating
+table, adding columns, indexes, creating view, etc. But, I am getting
+nervous as I am struggling with it, and this is supposed to be the
+basics of SQL.
+
+![Figure 1: Proc
+SQL](media/sas-proc-sql.png){fig-alt="Figure 1: Proc SQL"
+fig-align="center" width="450"}
+
+I sought help from Helper SAS code file provided by the professor, and
+even consulted with one of my classmates. There were seven tasks to
+solve for this assignment, and I got stuck on #3 for a long time. It
+made me more nervous as I had a deadline to meet. I was writing the
+codes, but I wasn't sure if I was doing it correctly. I wasn't sure if
+the results were correct.
+
+So I turned to Excel spreadsheet, something that I am very familiar
+with. Even though it is not the best practice to do what I was doing, I
+exported the smaller dataset created in SAS to Excel spreadsheet and
+used Excel's Pivot tables, Vlookup. Index-Match, Pivot Chart to cross
+check the tables and graphs I was creating in SAS. I resorted to Excel
+to understand how the codes I wrote in SAS was working and cross-check
+the result output with Excel generated outputs. It is definitely not the
+most efficient way of learning, but I didn't want to continue to get
+stuck. Using this technique, I was at least able to make good progress
+on the assignment for this week.
+
+I hope things get easier as I learn and practice more in the coming
+days. I know I am struggling, but I'd like to believe "If there is no
+struggle, there is no progress."

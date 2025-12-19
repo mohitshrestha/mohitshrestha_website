@@ -1,0 +1,182 @@
+---
+title: "Building Multiple Linear Regression Model"
+description: |
+  This week we studied about Estimation and Regression. For estimation, we specifically looked at T-Test or Student T-Test, and for regression, we particularly looked at linear regression. We studied T-Test to evaluate differences in the means
+date: 2019-07-01
+categories: [MSBA, DataScience, Data Analytics, SAS, Coding, Regression, Multiple Linear Regression, Models, Student T-Test]
+image: media/5-key-assumptions-of-regression.png
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+[**Less of a Blog, More of a Note on Model Building**]{.underline}
+
+This week we studied about Estimation and Regression. For estimation, we
+specifically looked at T-Test or Student T-Test, and for regression, we
+particularly looked at linear regression.
+
+We studied T-Test to evaluate differences in the means. In this process,
+I also came across a fun fact that T-test was developed by William
+Gosset. He introduced T-Test in 1908 while he worked at Guinness Brewery
+in Dublin. It was interesting to find out that he applied his findings
+using the T-Test to monitor the quality of stout in the production of
+dark beer. While he wanted to optimize and maintain the standard, he was
+researching how to make that happen for Guinness and that's when he came
+up with T-Test statistics. At first, Guinness did not allow him to
+publish his research publicly in fear that other competitors might take
+advantage, and Guinness won't have competitive advantage against them.
+But later Guinness agreed to allow Gosset to publish his finding under a
+pseudonym "Student". That's why, T-test is also known as Student T-test.
+
+T-test helps us compare means of two groups. There are two key
+assumptions for T-test:
+
+1.  The samples need to be independent
+
+2.  The samples need to be normally distributed (have a bell-curve or
+    symmetry around the mean)
+
+We usually use histogram to check if the distribution of the samples is
+normally distributed or not, but this week we also studied about a
+graph- scattered plot known as Q-Q plot, which helps us quickly eyeball
+the graph, where if the pattern of the scattered plot is an upward
+straight line, we can say that the samples are normally distributed.
+
+The SAS **PROC T-TEST** procedure is used to test for the equality of
+means for a two-sample (independent group) t-test. The typical
+hypotheses for a two-sample t-test are:
+
+    Ho : µ𝟏 = µ𝟐
+    Ha : µ𝟏 ≠ µ𝟐
+
+Once we run the **PROC T-TEST**, we get the results -- pooled estimator
+and Satterthwaite value. If the variance is equal, then we look at the
+p-value of the pooled estimator, otherwise, if the variance is unequal,
+we look at the Satterthwaite, which is an alternative estimator. If the
+p-value is \<0.05 (5%), we reject the null hypothesis that the means are
+equal, and we accept the alternative hypothesis that the means are
+different.
+
+Another thing for T-test is that the class statement must consist of
+only two levels. It cannot be more than two levels. For example, we can
+run t-test between wheat beer and lager beer, but we cannot run t-test
+for 10 different types of beer at once.
+
+Now lets talk about linear regression modeling, it is a foundational
+tool for prediction, estimation and forecasting across a wide variety of
+domains and problems. In linear regression, there is a response variable
+(variable that we want to predict also known as y-variable, or dependent
+variable), and predictor variable (variable that we will use to explain
+the response variable, also known as x-variable, independent variable,
+or explanatory variable).
+
+In statistics, we know that the linear equation has a straight line
+formula, **y=a + bx**, where a is the intercept which crosses y-axis,
+and b is the slope of that line. With this formula, we can determine the
+linear relationship between two variables. So regression is the
+statistical technique for finding the best fitted straight line through
+a set of data, and the resulting straight line is regression line, where
+the equation is also represented as **y= a+bx**. But, here, we also get
+an error, which is the difference between the actual data point (Y) and
+predicted data point (Y ̂) on the line. Total squared error is simply
+the sum of those differences.
+
+    error=Y-Y ̂
+    Total squared error: ∑\[(Y-Y ̂)\]\^2
+
+We need to know that the larger the correlation (which we can observe
+from the scattered plot), the less the error will be. So the accuracy of
+our linear regression depends on how well the points on the line
+correspond the actual data points, i.e., the amount of error. When there
+is a perfect correlation (r = 1 or r = -1), the linear equation fits the
+data perfectly. So we are looking for the r\^2 value or adjusted r\^2
+value to be closer to 1 so that we can tell that the model is perfectly
+fitted. For example, if we have adjusted r\^2 of 0.61 (61%), we can say
+61% of the variance in the dependent variable is explained by the
+combination of independent variables of our model. We look at adjusted
+r\^2 because it increases only if the new term improves the model more
+than it would be expected by chance.
+
+Talking about Multiple Linear Regression model, it has to have numeric
+variables, eg Categories, Nominal, Group etc. variables have to be
+One-Hot-Encoded which means all of those categories needs to be assigned
+to numeric variable for its identification to be able to use in the
+model. We also need to have complete records meaning observations
+containing nulls are ignored, and since we are dealing with linear
+regression, there needs to be linear relationship between the outcome
+variable and the independent variables.
+
+![5 Key Assumptions of
+Regression](media/5-key-assumptions-of-regression.png){fig-alt="5 Key Assumptions of Regression"
+fig-align="center" width="650"}
+
+Another thing to note is how to build a multi linear model. There are
+few steps to take into consideration. At first we explore the data,
+where we use **PROC means**, **univariate** and **sgplot** to explore
+numeric and continuous variables, and generate descriptive statistics,
+and number of counts, number of missing value, mean, median, and discard
+any columns and observations that have a lot of missing values so that
+we can prepare or transform our data. Before that, we also run
+correlation between variables with PROC corr and plot the SGPLOT
+scatter, box, and histograms to determine the correlation between all
+the variables. Next step, we plot the distribution and see if it has
+skewed or normal distribution by looking at the histograms. If we find
+the variables to have skewed distribution then we use data step to
+transform those variables to have normal distribution by using LOG(x),
+LN(x), X\^2, 1/X, SQRT(X). Among these whichever method gives us the
+normal distribution for those variable, we use that method in our model.
+Simultaneously, we also describe rules to identify and exclude outliers
+and extremes that affects our mean.
+
+We also use **PROC freq** and **sgplot** to check the frequency to
+explore categorical / nominal variables. Then we look at preparing or
+transforming our continuous variable, basically replacing missing values
+with mean or median, and applying normalization model. We use that to
+prevent our results from being skewed because if we input skewed data,
+our model won't predict good results. As we know Garbage In Garbage Out,
+we want to make sure to input good data to build and train our model, so
+it produces better results.
+
+When building our model we need to remember encoding categorical/nominal
+variables to 0/1s. We use **PROC sql CASE WHEN** or **DATA step
+IF/THEN** to do the encoding. Once we have transformed and prepared our
+dataset, we will partition our whole dataset into training set (75%) or
+test set (25%). We will iteratively train our model using training set.
+For evaluating the model, we check for the following steps after running
+**PROC Reg**:
+
+![Figure 1](media/figure-1.png){fig-alt="Figure 1" fig-align="center"
+width="450"}
+
+![Figure 2](media/figure-2.png){fig-alt="Figure 2" fig-align="center"
+width="450"}
+
+![Figure 3](media/figure-3.png){fig-alt="Figure 3" fig-align="center"
+width="450"}
+
+![Figure 4](media/figure-4.png){fig-alt="Figure 4" fig-align="center"
+width="450"}
+
+![Figure 5](media/figure-5.png){fig-alt="Figure 5" fig-align="center"
+width="450"}
+
+![Figure 6](media/figure-6.png){fig-alt="Figure 6" fig-align="center"
+width="450"}
+
+So far, I have managed to understand **PROC REG** procedure to build
+multiple linear regression model. However, there are other alternatives
+to **PROC REG** procedure in building a regression model. These
+alternative procedures, I have yet to explore further. For reference,
+below are the snapshot of comparisons between the procedures provided in
+the class.
+
+![Figure 7](media/figure-7.png){fig-alt="Figure 7" fig-align="center"
+width="450"}
+
+![Figure 8](media/figure-8.png){fig-alt="Figure 8" fig-align="center"
+width="450"}

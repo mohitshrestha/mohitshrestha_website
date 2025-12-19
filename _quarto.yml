@@ -1,0 +1,116 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  cookie-consent:
+     type: implied
+     style: simple
+     palette: light
+  favicon: media/logos/favicon.png
+  google-analytics:
+    tracking-id: "G-266350065"
+    anonymize-ip: true
+  title: "Mohit Shrestha"
+  description: "A personal website on the exploration of open data and other adventures."
+  site-url: "https://www.mohitshrestha.com.np"
+  twitter-card:
+    image: media/profile-pic.jpg
+    card-style: summary_large_image
+    creator: "@MohitShrestha"
+    site: "@MohitShrestha"
+  open-graph: true
+  navbar:
+    title: "Mohit Shrestha"
+    logo: media/logos/mohit-logo-2x.png
+    logo-alt: "Mohit Shrestha's logo"
+    right:
+      - href: index.qmd
+        text: Home
+      - href: posts.qmd
+        text: Blog
+      - href: services.qmd
+        text: Services
+      - href: projects.qmd
+        text: Projects
+      - href: recommendations.qmd
+        text: Recommendations
+      - text: Resources
+        menu:
+          - text: "Mohit's Resources"
+            href: resources.qmd
+          - text: R for Data Science
+            href: https://r4ds.had.co.nz/index.html
+          - text: Tidyverse
+            href: https://www.tidyverse.org/
+          - text: Tidymodels
+            href: https://www.tidymodels.org/
+          - text: Tidyverse Style Guide
+            href: https://www.tidyverse.org/blog/
+      - href: CV/Mohit_Shrestha_Resume.pdf
+        text: Resume
+      - text: "COVID-19 Tracker"
+        menu:
+          - text: "COVID-19 Nepal"
+            href: covid19-nepal.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/MohitShrestha/
+      - icon: github
+        href: https://github.com/MohitShrestha/
+      - icon: twitter
+        href: https://twitter.com/MohitShrestha
+      - icon: rss
+        href: blog.xml
+    pinned: true
+  search:
+    location: navbar
+    type: overlay
+    copy-button: true
+  page-footer:
+    background: light
+    left:
+     - text: Copyright © 2005-<script>document.write( new Date().getFullYear() );</script>&nbsp;<a href="https://www.mohitshrestha.com.np" target="_top">Mohit Shrestha</a>. <br>All rights reserved.
+    right:
+     - icon: linkedin
+       href: https://www.linkedin.com/in/MohitShrestha/
+     - icon: github
+       href: https://github.com/MohitShrestha
+     - icon: twitter
+       href: https://twitter.com/MohitShrestha
+    border: true
+  reader-mode: true
+  repo-url: https://github.com/MohitShrestha/mohitshrestha.com.np
+  repo-actions: [edit, issue]
+
+format:
+  html:
+    page-layout: full
+    theme:
+      #green_theme.scss
+      light: [ms_theme.scss]
+      dark: [ms_dark_theme.scss]
+    css: styles.css
+    code-copy: true
+    code-link: true
+    code-fold: true
+    code-tools:
+      toggle: true
+      source: false
+    mainfont: Nunito
+    toc: false
+    toc-location: "left"
+    anchor-sections: true
+    fig-align: center
+    fig-cap-location: bottom
+    reference-location: margin
+    link-external-icon: false
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.mohitshrestha\.com\.np\/custom'
+
+comments:
+  giscus:
+    repo: MohitShrestha/mohitshrestha.com.np
+
+# See https://quarto.org/docs/projects/code-execution.html#freeze
+execute:
+  freeze: auto  # Re-render only when source changes

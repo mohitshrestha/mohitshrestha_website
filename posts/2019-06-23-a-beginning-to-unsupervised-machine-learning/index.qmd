@@ -1,0 +1,110 @@
+---
+title: "A beginning to unsupervised machine learning"
+description: |
+  Last week we learned about using macros in SAS. To be honest, in the beginning, I found it really difficult, but after reviewing it few times even after submitting my assignment, I now feel a bit more comfortable using it. But then again, classes are moving very fast; we're jumping from one topic to another in a week. 
+date: 2019-06-23
+categories: [MSBA, DataScience, Data Analytics, SAS, Coding, Unsupervised Machine Learning, ML]
+image: media/quote-a-little-progress-each-day-adds-up-to-big-results.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+![Image source:
+https://i.pinimg.com/736x/09/50/d1/0950d1c1706b436bfa0f040e34133778.jpg](media/quote-a-little-progress-each-day-adds-up-to-big-results.jpg){fig-alt="A little progress each day adds up to big results"
+fig-align="center" width="450"}
+
+Last week we learned about using macros in SAS. To be honest, in the
+beginning, I found it really difficult, but after reviewing it few times
+even after submitting my assignment, I now feel a bit more comfortable
+using it. But then again, classes are moving very fast; we're jumping
+from one topic to another in a week. Learning a new concept every week
+is a bit overwhelming, especially when I am unable to keep up with the
+fast pace of the program. But I also find this exciting, It pushes me to
+challenge myself. It reminds me why I joined this program. I know it's
+hard but I will keep at it.
+
+This week we learnt about two powerful procedures of SAS -- PROC
+UNIVARIATE and PROC FASTCLUS. So here are some things that are basic but
+I need to make a note of.
+
+[**PROC UNIVARIATE**]{.underline} -- If the PROC MEANS procedure does
+not produce the statistic needed for a data analysis then we can use
+PROC UNIVARIATE as it can do everything that PROC MEANS can do and much
+more. It provides a wider variety of statistics (than PROC MEANS) like
+moments, descriptive statistics, quantiles. In addition, it also
+generates graphs and will help us discover information about the
+distribution of data as well as identify extreme observations in our
+data.
+
+[**PROC FASTCLUS**]{.underline} -- It performs K-means cluster and other
+clustering analysis techniques. But we are going to focus on K-means
+cluster analysis on the basis of distances computed from one or more
+quantitative variables. I am more excited to learn about PROC Fastclus,
+as it starts our journey into unsupervised machine learning. Basically
+it means that we will be able to let the computers identify data on its
+own and use that identification to cluster similar pieces of data
+together. It picks up initial random observations called cluster seed,
+and by default it uses the Euclidean distance (distance between two
+points). It assumes a center for one of the cluster and finds the
+shortest distance between each of the observations to the center of the
+cluster, and finds how well the cluster represents the datasets. PROC
+Fastclus is designed to find good clusters, however, they may not be the
+best possible clusters. Moreover, the Fastclus procedure is intended for
+large data sets, with 100 or more observations.
+
+One of the examples that we used in class for PROC FASTCLUS was to
+analyze types of beers, where we clustered all the beer data into 3
+clusters -- high alcohol low bitterness, medium alcohol medium
+bitterness, and low alcohol high bitterness. We were able to narrow down
+2,410 numbers of different beers into 3 categories that sort of captured
+general variety of beers types in our data set. So, we can now just look
+into the particular categories that we are interested and find the few
+selection of beers that we are interested than looking at 2,410
+different beers.
+
+Using PROC Fastclus we can build a perfect model. We need to remember
+that clustering is not an exact science. We can build a perfect cluster
+by simply increasing the value of K or number of clusters. So,
+technically, we can have a cluster for each point of observation. But in
+practical it does not make any sense to do so. There is a trade off how
+well the data fits the cluster and how well we can define the cluster.
+Another thing to note is that if we are clustering more than 3 or 4
+variables, then we have to really ask does it make sense or can we
+easily describe the lows and highs of each different things. It is hard
+to describe when we have 4 to 5 dimensions, it becomes much harder to
+explain and defend it. We have to be cautioned of clustering more than
+10 clusters because we will end up with unintelligible clusters.
+Therefore, we need to have a fine balance of how many clusters we want
+so that we can look at the data and have enough clusters to analyze it
+better.
+
+Another scenario that we looked at is where we separated a data set into
+2 sets, one for training set and another set for test. For training set,
+we would run a model. Once we had a good model, we ran the test set data
+using that model to predict. I found it very fascinating to learn
+unsupervised learning where we are not trying to predict a target but we
+are trying to magically find hidden relationship within the data without
+trying to force those relationship by having something to try to
+predict. Key things for Unsupervised Learning:
+
+1.  We don't have a label or target that we can go learn from.
+
+2.  Instead we just look at natural grouping within the data or natural
+    patterns that we find within the data.
+
+Lastly, there is so much to learn. We just touched the basics of machine
+learning, but it is still very difficult. I often find myself
+overwhelmed with so much information to process. For this week's
+assignment for the last task, i did get stuck and struggled a bit. So, I
+scheduled a one-on-one video session with my professor to go over some
+of the conceptual things that i was not clear about. This helped me
+immensely clear our my confusion and I was able to finish major chunk of
+the assignment. I still need to clean my codes and write additional
+comments to finish my assignment for this week, and finishing my
+assignments, I plan to go back and review the course materials again to
+firm my understanding of the material better.

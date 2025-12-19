@@ -1,0 +1,55 @@
+---
+title: "The journey of learning R programming language begins"
+description: |
+  Regardless of what language it is, the analytic process of every programming language is the same. So since we've already learned programming, learning R would be similar to SAS, so hopefully getting used to the syntax of R would be a bit easier as we've already learnt SAS.
+date: 2019-07-22
+categories: [MSBA, DataScience, Data Analytics, R, SAS vs R vs Python, SAS, Python, Why learn R, Programming languages]
+image: media/why-learn-r.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+Last week, we started R programming language, and to be honest, I'm very excited to be learning it.
+I had briefly written about it in my last blog post too.R is one of the most popular programming languages, besides Python, and the interest in the R language data analysis is soaring.
+
+I came across a blog post which compares R with SAS and Python.
+These are the most widely used languages in the field of analytics.
+
+![Image Source: https://www.gangboard.com/blog/sas-vs-r-vs-python/](media/sas-vs-r-vs-python.png){fig-alt="Image Source: https://www.gangboard.com/blog/sas-vs-r-vs-python/" fig-align="center" width="550"}
+
+Regardless of what language it is, the analytic process of every programming language is the same.
+So since we've already learned programming, learning R would be similar to SAS, so hopefully getting used to the syntax of R would be a bit easier as we've already learnt SAS.
+However, there are some key differences between R and SAS like instead of procedures PROCs in SAS, we will be learning Functions in R.Functions are similar to SAS macros but they are much more.
+Unlike SAS macros, Functions returns values.
+R is also a functional language where Functions are objects.
+In R everything is an object.
+Common object types are predefined, e.g. data objects, statistical functions, result objects etc.
+It is also possible to define new objects with object oriented programming techniques.
+R has been specifically designed as a language for statistical and mathematical problems, so it is a good example of a domain specific language.
+
+R consists of a small core program and a very elaborate package (e.g. R functions, data files, help files, code examples, PDF manuals, and unit tests).
+Because of the extensibility of R and availability of a very large number of packages, R is a very powerful programming language and thus, it saves a ton of time and improves the results.
+However, we need to make sure that the package that we are using is regularly updated.
+Since it is such a widely used language, there are many updates, so we just need to pay a bit more attention to the recent updates in the package when we use it.
+
+Our R learning will start with importing and exporting data, and then we will move on to how to structure the data.
+One of the big switch in R would be we won't be using semicolons, and equals operator.
+We will be using \<- operator to assign value to a variable.
+x\<-5 statement would assign value 5 to variable x.
+Another big difference that I've noticed in R compared to SAS is the length of the codes -- writing codes in R is usually much shorter than compared to SAS for the same task.
+As a result, we will spend more less to write the codes which will give us more time to analyse the results.
+Another thing that sets R apart from SAS is that R helps in producing outstanding graphs.
+With better graphs, analyzing the data becomes much easier, and in my case, it also makes me want to dive deeper into the analysis.
+
+![Image Source: https://www.houseofbots.com/images/news/11673/cover.png](media/why-learn-r.jpg){fig-alt="Image Source: https://www.houseofbots.com/images/news/11673/cover.png" fig-align="center" width="550"}
+
+The chart above perfectly summarizes the key feature of R and for all the reasons above, I am looking forward to the intense 8 weeks of learning R programming language.
+
+**NOTE:** We need to install R first and then only install RStudio as R in order to take advantage of using the nice interface that RStudio provides.
+
+Just for future reference, I've also saved the slides from the class presentation that covers some basics of R in another blog post: <https://www.mohitshrestha.com.np/blog/basics-of-r-programming-language>

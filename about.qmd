@@ -1,0 +1,101 @@
+---
+title: "Mohit Shrestha, MSBA"
+subtitle: "Data Analytics & Business Intelligence Consultant"
+image: media/profile-pic.jpg
+about: 
+  id: topbr
+  template: trestles
+  image-width: 16em
+  image-shape: round
+  links:
+    - icon: linkedin 
+      text: LinkedIn
+      href: https://www.linkedin.com/in/MohitShrestha/
+    - icon: github 
+      text: GitHub
+      href: https://github.com/MohitShrestha
+    - icon: twitter 
+      text: Twitter
+      href: https://twitter.com/MohitShrestha
+    - icon: envelope 
+      text: Email
+      href: mailto:mohitshrestha@gmail.com
+---
+
+:::{#topbr}
+
+### Hi there!
+
+Currently, I am working as a Data Analytics & Business Intelligence Consultant at [Data Elevates](https://www.dataelevates.com/). I am well versed in R, Python, SAS, SQL, Tableau, and Power BI and specializes in data modeling and wrangling, building ML/AI models, analyzing and interpreting model results, and presenting impactful data insights to drive successful business solutions.
+
+I am motivated to support organizations striving to be more data-driven in their missions and solve problems by converting insights from data into actionable solutions.
+
+------------------------------------------------------------------------
+
+### Recent experience
+
+<p class="custom-subtitle">
+
+{{< fa chalkboard-teacher >}} **Data Scientist Consultant, Feb 2022 - present**
+
+</p>
+
+<p class="custom-subtitle2">
+
+[Data Elevates](https://www.dataelevates.com/)
+
+</p>
+
+<p class="custom-subtitle">
+
+{{< fa bolt >}} **Senior Energy Market Analyst, May 2021 - Dec 2021**
+
+</p>
+
+<p class="custom-subtitle2">
+
+[Energy Exemplar](https://www.energyexemplar.com/)
+
+</p>
+
+<p class="custom-subtitle">
+
+{{< fa bolt >}} **Energy Market Consultant, Jun 2011 - Sep 2016**
+
+</p>
+
+<p class="custom-subtitle2">
+
+[ICF](https://www.icf.com/)
+
+</p>
+
+------------------------------------------------------------------------
+
+### Education
+
+<p class="custom-subtitle">
+
+{{< fa graduation-cap >}} **M.S. in Business Analytics \| Sept 2019 - May 2021**
+
+</p>
+
+<p class="custom-subtitle2">
+
+[Wake Forest University School of Business](https://business.wfu.edu/msbaprograms/)<br> Winston-Salem, North Carolina, USA
+
+</p>
+
+<p class="custom-subtitle">
+
+{{< fa graduation-cap >}} **B.S. in Mathematical Economics and Applied Mathematics \| Aug 2007 - May 2011**
+
+</p>
+
+<p class="custom-subtitle2">
+
+[Hampden-Sydney College](https://www.hsc.edu/)<br> Hampden Sydney, Virginia, USA
+
+</p>
+
+:::

@@ -1,0 +1,34 @@
+---
+title: "Life’s a marathon, not a sprint"
+description: |
+  A mini break to recharge mind and body for better learning. "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean." ~ John Muir
+date: 2019-07-08
+categories: [MSBA, DataScience, Data Analytics, SAS, Coding]
+image: media/alamere-fall.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+---
+
+**A MINI BREAK TO RECHARGE MIND AND BODY FOR BETTER LEARNING.**
+
+![Image Source: Alamere falls](media/alamere-fall.jpg){fig-alt="Image Source: Alamere falls" fig-align="center" width="550"}
+
+> "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean." \~ John Muir
+
+Week 7 is the July 4th long weekend, so this week we didn't have live session class for BAN 7001 (Probability and Statistical Modeling), and we only had office hour for BAN 7002 (Analytics Software Technology) class, where we quickly went over the mid-term project, to build a model to predict house prices using SAS. This mid-term project would require us to draw on all the SAS skills that we have acquired to predict home values for a major city in the U.S. This project will be a great exercise to practice all SAS concepts and practice that we have learned so far and use it to analyze a real world business scenario. In addition, with this project, we would wrap up everything we needed to learn about SAS programming language for this term. In such a short time of 7 weeks, we have covered a lot of topics in SAS programming and explored various analytical methods/tools used by Data Analyst/Data Scientist in examining various real world business scenarios. I believe I have acquired the building blocks to get started in SAS programming, and now I need to continue to practice more to master the language.
+
+Next week, we will start to learn R programming language, and I'm really excited about this one. I had been wanting to learn R or Python for a while. Both of these languages are open source and currently they are one of the most popular and widely used programming language for data analysis. Currently, there is an on-going discussion which language R or Python is better to learn in long run in data scientist communities. But I have read online, that once we learn one language, it is easier to learn and pick up other language as well. Therefore, I am excited to start learning R programming language starting next week. I am eager to find out about the advantages/disadvantages of using SAS vs R programming language for data analysis.
+
+This week, during the office hour for BAN 7002, we just went over the material such as the basic construct of what we need to do for the house price prediction model project. After the office hour, I really haven't had much time to work on the mid-term project yet due to prior commitment for July 4th long weekend. Also, since our submission deadline for this project was postponed to next week July 15, 2019 due to the July 4th long weekend, I have not rushed myself to finish the project yet.
+
+We have been having back to back classes every week since the program started in May 22, 2019, and I decided to give myself a mini break this week. I took this time to relax and unwind as I believe it is important to pause, reflect and recharge so that I have the energy and focus required to continue my learning and do my best.
+
+> "LIFE'S A MARATHON, NOT A SPRINT. PAUSING TO REFLECT IS NOT A PRIVILEGE --- IT'S A MUST." \~ DOMINIC SOH
+
+The highlight of my July 4th weekend was a 8.5 mile hike to Alamere Falls in Point Reyes National Park, CA. Since I live in the Bay area, there's plenty of natural reprieves within few miles from where I live. I along with my wife and friends decided to hike the Coast Trail from the Palomarin Trailhead near Bolinas to Alamere Falls. It was a beautiful hike that offered such a varied landscape. We walked through pine forests and lush green vegetation, saw beautiful wildflower blooms, lakeside views and amazing coastal panoramas. The main feature of the hike was the Alamere Falls which cascades over a 30 foot tall cliff and joins the Pacific ocean. It was a great hike, a definitely good break for myself, a good exercise for my body and mind.
+
+I haven't made much progress this week as I took things slow. I feel like I took a much needed break to rejuvenate myself for more learning ahead. Meanwhile, I have managed to finish assignments for BAN 7001, and now I can focus on analyzing the data and building the predictive model using SAS for BAN 7002 mid-term project.
+
+As for the BAN 7001, we are now studying about hypothesis testing, which kind of coincides nicely with us testing and evaluating our predictive models that we are building for BAN 7002 class. We will be defining a hypothesis and testing it against the alternative hypothesis in our model and testing how variables and the model predicts the house price.

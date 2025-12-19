@@ -1,0 +1,104 @@
+---
+title: "Data Wrangling 2.0 with R"
+description: |
+  Now this week is data wrangling 2.0 with R, where we'll be taking a step further into wrangling and look at data structuring where we will be using more techniques like joining, transposing to analyze the data better.
+date: 2019-07-29
+categories: [MSBA, DataScience, Data Analytics, R, Data Wrangling, Dplyr]
+image: media/figure-1.png
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+We've been studying R for two weeks now, and so far we have studied the basics -- analyzing the data with simple plotting- creating histogram, scatter plot.
+
+And now this week is data wrangling 2.0 with R, where we'll be taking a step further into wrangling and look at data structuring where we will be using more techniques like joining, transposing to analyze the data better.
+
+```{r echo=FALSE, out.width = "30%", fig.align = "right"}
+knitr::include_graphics("media/figure-1.png")
+```
+
+First we looked at how to filter NAs, how to convert a character into a numeric data, convert date integer/character format into Date format using lubridate package, which is a R package that basically makes it easier to process any date related tasks.
+
+In today's blog, I'll just make a note of some of these techniques that I thought would be most helpful.
+
+-   Data wrangling **with DPLYR**
+
+    -   inner join
+
+    -   full join
+
+    -   bind rows and bind column
+
+    -   union all
+
+    -   union
+
+-   Data wrangling **with SQL**
+
+    -   SetDiff
+
+-   Data wrangling **with Tidy R**
+
+    -   gather
+
+    -   spread
+
+JOINs statement in R are very similar to PROC SQL in SAS, but I found writing Join statement in R much easier and straight forward.
+
+The most used technique of joining two datasets is using the function **inner join** which returns all observations in table_A and table_B, where the keys are equal, which is defined in the by statement.
+If we don't specify the columns that we want to join by, by default, it will take the column names that match.
+
+![Inner Join](media/inner_join.png){fig-alt="Inner Join" fig-align="center" width="450"}
+
+**Full join** is another useful technique where it selects all matching and non-matching rows, and brings the records from all of the tables.
+I think this will be very useful when we are trying to find things that don't match up.
+
+![Full Join](media/full_join.png){fig-alt="Full Join" fig-align="center" width="450"}
+
+But what happens when we don't have matching columns?
+We just use DPLYR and specify a vector in the by statement:
+
+**by = c("x" = "x2", "y" = "y2")**
+
+Here, x will be coming from Table 1, and x2 will be coming from Table 2.
+They don't have to be the same name, but they have to be the same type.
+
+![https://dplyr.tidyverse.org/reference/join.html](media/common_join_gotchas.png){fig-alt="Common Join Gotchas!" fig-align="center" width="450"}
+
+The other thing we learned is how to append rows together and bind columns by using functions **bind_rows** and **bind_cols**.
+They are pretty similar in terms of what they do.
+Bind rows just appends the tables together, and bind columns just puts the two tables together without the join.
+It may look like it joins the tables, but it's not matching the keys.
+Also, in bind column, it just looks at the first column of first table.
+So in the example below, bind column just takes the observation data in COL_A of Table A.
+
+![Bind Rows and Bind Cols](media/bind_rows_bind_cols.png){fig-alt="Bind Rows and Bind Cols" fig-align="center" width="450"}
+
+So, the next function that is similar to bind_rows is **union_all**.
+Union also bind rows, but it doesn't do sort, so we'll just end up with a record once Table A and Table B are put together.
+
+![Union all](media/union_all.png){fig-alt="Union all" fig-align="center" width="450"}
+
+There's another function **union** which is similar to union_all, where it appends the records with a sort distinct and returns the unique set of rows from Table A and B
+
+![Union](media/union.png){fig-alt="Union" fig-align="center" width="450"}
+
+One of the other things that I think would be very helpful is **SetDiff** as it returns the rows that don't match.
+There are times when we want to see what didn't match, so in those cases SetDiff would be super helpful.
+
+![Setdiff](media/setdiff.png){fig-alt="Setdiff" fig-align="center" width="450"}
+
+We also learnt about data tidying, which is similar to transpose but a lot more powerful, where we have
+
+-   **gather** which allows us to take multiple columns and gathers them into key-value pairs and flips them into rows
+
+-   **spread** which takes two columns (key & value) and spreads in to multiple columns and makes rows into columns
+
+![Gather](media/gather.png){fig-alt="Gather" fig-align="center" width="450"}
+
+![Spread](media/spread.png){fig-alt="Spread" fig-align="center" width="450"}

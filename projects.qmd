@@ -1,0 +1,42 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  sort: "date desc"
+  type: grid
+  grid-item-border: true
+  grid-item-align: left
+  max-description-length: 175
+  date-format: medium
+  categories: numbered
+  sort-ui: false
+  filter-ui: true
+  feed: true
+page-layout: full
+title-block-banner: false
+comments: false
+---
+
+Want to support my work? <a href='https://ko-fi.com/mohitshrestha' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br>
+Or if you’re interested in working with me, I’m open to freelance work. You can book an appointment with me on <a href="https://calendly.com/mohitshrestha" target="_blank">Calendly</a>.
+
+<a rel="me" href="https://fosstodon.org/@mohitshrestha"></a>
+
+```{r write-redirects}
+#| echo: false
+# list names of post folders, 
+# adapted from Dr. Danielle Navarro,
+# a legit Data Witch
+# https://blog.djnavarro.net/porting-to-quarto/#netlify-redirects
+projects <- list.dirs(
+  path = here::here("projects"),
+  full.names = FALSE,
+  recursive = FALSE
+)
+# extract the slugs
+slugs <- stringr::str_remove(projects, "\\d{4}-\\d{2}-\\d{2}-(?!\\d)")
+# lines to insert to a netlify _redirect file
+redirects <- paste0("/", slugs, " ", "/projects/", projects)
+# write the _redirect file
+writeLines(redirects, here::here("docs", "_redirects"))
+```

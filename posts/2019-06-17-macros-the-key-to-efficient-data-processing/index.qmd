@@ -1,0 +1,132 @@
+---
+title: "Macros - the key to efficient data processing"
+description: |
+  My first introduction to Macro was in Microsoft Excel with VBA Macros. I haven’t used it extensively, but my last job required me to work with macros on few occasions.
+date: 2019-06-17
+categories: [MSBA, DataScience, Data Analytics, SAS, Coding, Macros]
+image: media/74463-2.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+![Image source:
+https://www.lynda.com/Excel-tutorials/Excel-2010-Macros/74463-2.html](media/74463-2.jpg){fig-alt="Image source: https://www.lynda.com/Excel-tutorials/Excel-2010-Macros/74463-2.html"
+fig-align="center" width="450"}
+
+My first introduction to Macro was in Microsoft Excel with VBA Macros. I
+haven't used it extensively, but my last job required me to work with
+macros on few occasions. But, to be honest, I didn't really liked
+working with macros then as most of the macros I worked with were
+created by someone else, without any instructions and proper
+descriptions of what the macros supposed to do. So, if you are not the
+one who wrote the macro, it is a bit more difficult to understand it.
+Unlike formulas, where it is very easy to backtrack the output; in
+macros, the output is a hard-coded number, so one has to look at the
+codes in detail to understand how the output was calculated. Therefore,
+I preferred working with formulas more than macros, however, I
+understand that working with huge datasets it is very efficient to
+create macros to automate tasks as it also reduces the possibility of
+human error that increases with many, repetitive keystrokes and tasks.
+
+Last week we learnt about using SQL (PROC SQL statements) in SAS
+language. It helped us to merge different sources of data, and process
+and analyze huge datasets. This week, we took a step further and learnt
+how to write Macros to i) automate processing huge chunks of the same
+code to analyze different components in the dataset, and ii) minimize
+the number of lines of codes for the data analysis. Macros are
+especially useful for automating and doing repeatable discrete tasks,
+where the analysis is an iterative process, and to pass data from step
+to step.
+
+**Here are the key steps of writing any macro:**
+
+1.  Is it worth writing a macro vs lines of codes/formula?
+
+    -   If it is just few line of codes, then we can just repeat the
+        codes, its a lesser hassle than creating macros.
+
+    -   But if the lines of code is 10 or more, and we have to repeat
+        the same code multiple times for analyzing different variables,
+        then it is worth writing a macro.
+
+    -   If we think we would use the code frequently in future, then it
+        is worth writing a macro and saving for future use.
+
+2.  Once you decide to write a macro, start with writing the core part
+    of the program. If it helps, break that program into multiple tasks.
+    It is easier to write each block of code based on the order in which
+    a user would perform this task if it were to be done manually.
+
+3.  Take one component/field/variable that you want to analyze and make
+    sure that the core lines of code runs smoothly without any error,
+    and it does what it needs to do.
+
+4.  Once you have verified that the core lines of code are working, then
+    you can create a macro as follows:
+
+    1.  [To start a macro:]{.underline}
+
+        -   **%MACRO** macro-name \<(parameter-list)\>\</ option-1
+            \<...option-n\>\>;
+
+    2.  [Paste the clean code]{.underline}
+
+        -   Start replacing the hard-coded input parameters that we
+            defined earlier
+
+    3.  [To end a macro:]{.underline}
+
+        -   %MEND
+
+5.  When we run the chunk of code, it doesn't return any output. We have
+    to call the macro that we created with the defined input parameters.
+
+    **Here is an example:**
+
+``` sas
+PROC FREQ DATA=NC_OPIOID_ANALYSIS nlevels; 
+TABLE Gender / out=freq_out; 
+RUN;
+```
+
+**Now writing macros for the above code**, but making it dynamic to be
+used for analyzing other variables as well:
+
+``` sas
+%MACRO charProfile(inDat=, charField=); 
+PROC FREQ DATA=&inDat nlevels; 
+TABLE &charField / out=freq_out; 
+RUN; 
+%MEND;
+```
+
+**Now we call macro** to analyze lets say field Medical School Name
+instead of Gender from NC_OPIOID_ANALYSIS table.
+
+``` sas
+%charProfile(inDat= NC_OPIOID_ANALYSIS, charField=Medical_school_name);
+```
+
+In this example, at first I wrote lines of core code to analyze Gender
+field only, but later when i created Macro named charProfile, I was able
+to reuse the same chunk of code to analyze 20 different character
+variables of that table, not just Gender. It was amazing to see how I
+was able to analyze all interested character variables from that
+datasets in such an efficient way using Macros.
+
+Previously at work, I had to struggle understanding macros created by
+others without proper descriptions and instructions. So, my experience
+with macros were not pleasant; however from this weeks project, I got to
+learn about the key steps for writing a macro. I got to practice writing
+macros from the beginning and analyze the real world data set. Thus, it
+was much easier to follow and understand. I'll definitely give writing
+Macros another chance, and given that I enjoyed this weeks assignment
+using macros, I think I use Macros more often to perform iterative tasks
+and analyze big data sets.
+
+Cheers! to overcoming the fear of using Macros.

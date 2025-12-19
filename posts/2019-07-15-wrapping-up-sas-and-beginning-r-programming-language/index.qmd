@@ -1,0 +1,86 @@
+---
+title: "Wrapping up SAS with mid-term project and kicking off R"
+description: |
+  This is Week 8 of the MSBA program, an end to our learning of SAS programming language and beginning of R programming language. Our SAS learning journey ended with a mid-term project of analyzing data and building predictive multiple linear regression models using SAS.
+date: 2019-07-15
+categories: [MSBA, DataScience, Data Analytics, SAS, R, Coding, Predictive, Multiple Linear Regression, Regression]
+image: media/sas-to-r.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+This is Week 8 of the MSBA program, an end to our learning of **SAS programming** language and beginning of **R programming** language.
+Our SAS learning journey ended with a mid-term project of analyzing data and building predictive multiple linear regression models using SAS.
+
+![Image Source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpAx15voLIn8JQb5-085gfIZ053alpvkFn1A&usqp=CAU](media/sas-to-r.jpg){fig-alt="Image Source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpAx15voLIn8JQb5-085gfIZ053alpvkFn1A&usqp=CAU" fig-align="center" width="550"}
+
+For this project, I had set up some goals for myself:
+
+-   Use everything I've learnt and practice more.
+
+-   Write cleaner codes that are easier to read and follow.
+
+-   Use macro when possible to reduce repetitive lines of codes.
+
+-   Be efficient while coding -- Rather than spending most of my time just on coding, I wanted focus more on understanding the presented dataset, and better analyze the data and results.
+
+-   Build a robust narrative around it for a high-impact storytelling with data analysis.
+
+For **Data Exploration**, I learnt new technique for finding correlation between variables to our single target variable AV_TOTAL.
+When I looked at SAS website for PROC CORR procedure for syntax and options available, I found out that using "BEST=Variable Number" option allows us to get the variables in descending order of magnitude of correlation coefficient.
+I found this super helpful as it avoided the need to eyeball the high correlation to the target variable using WITH statement (in my case it was with AV_TOTAL) and mention all numeric variables under VAR statement for Training dataset.
+
+Using **PROC CORR with BEST= options generated Pearson Correlation Coefficient table summary with highest correlated variables** to AV_TOTAL in descending order with their respective values.
+This was something which was not discussed in class, I was glad to learn about it via online search as it is a very efficient quick way to do data analysis technique, so once when I learnt about it via online search, I shared it with my professor, and he thanked me for letting him know about this "Best=" option in PROC CORR procedures, as he plans to start using that option going forward in his analysis work.
+
+![Figure 1: PROC CORR with BEST = options generated Pearson Correlation Coefficient table summary with highest correlated variables to target variable in descending order](media/figure-1.png){fig-alt="Figure 1: PROC CORR with BEST = options generated Pearson Correlation Coefficient table summary with highest correlated variables to target variable in descending order" fig-align="center" width="550"}
+
+For **Model 1**, I used the top 10 numeric variables that had high correlation that had high correlation using Proc Reg procedure
+
+For **Model 2**, I used all numeric variables (not just the top 10 highly correlated variables) using Proc Reg with Selection-Forward Stentry = 0.10
+
+We were required to create only two models, but I wanted to use **Proc GLMSELECT** as I had not used it before, so I created an additional model.
+So, for **Model 3**, I used **Proc GLMSELECT**.
+
+The difference between Proc Reg and Proc GLMSELECT is that the later one allows us to be efficient by doing one hot encoding automatically for categorical/character variables that we specify in class statement.
+
+-   **Proc Reg** can use only numeric variables to build linear regression model, so we would have to manually do one hot encoding character variables if we want to include them in our linear regression model.
+
+-   **Proc GLMSELECT** can use both numeric and categorical/character variables to build linear regression models by listing character variables that we are interested in a class statement and include in model building equation.
+    PROCGLM SELECT will do one hot encoding automatically for those listed categorical variables in class statement.
+
+In model 3, I also used Lasso Selection method (because I had not used it before, and my Goal#1 was to "Use everything I've learnt and practice more." Lasso basically casts a wide net for all variables mentioned and evaluates and builds the most compact model with less variables. However, in my case, Lasso did not give me the desired level of adjusted R square value and lower RMSE. So I played around using Selection method Forward with Slentry=0.10 in Proc GLMSELECT procedure, where I used all numeric and categorical/character variables to build the model and used class statement with categorical variables in Model 3.
+
+**Model 3 gave me the best result.**
+
+![Figure 2: Results from Model 3](media/figure-2.png){fig-alt="Figure 2: Results from Model 3" fig-align="center" width="550"}
+
+NOTE: I had to remove some character variables from Proc GLMSELECT because if my training data set didn't have records with character variables that are in predict and validate data set, the model will give me 0 value for prediction result.
+As there was no data in training data set to train the model so it will produce 0 as predicted value for the model.
+
+Since I spent most of my time with the mid-term project, I did not get a lot of time to go through the material provided for the R programming language.
+However, I am very excited to learn R programming language as it is one of the most popular free (open-source) statistical language along with Python, both of which has a massive community of users.
+More and more statisticians and data scientists are adopting R or Python for data analysis, as 1) it's free, 2) the data analysis capabilities of both of these languages are endless, and 3) Existence of massive programming community for support.
+
+I had taken few R classes during my undergraduate, and back then we didn't have R Studio.
+We used to write in R script in the old user interface, so with the introduction of R Studio, its much easier to learn R.
+It's been a while since I last used R, and I'm really looking forward to learn more of it.
+
+There are few differences between R and SAS.
+We can say goodbye to semicolons (;) at the end of the statements in R while we it is required in SAS.
+Another difference between R and SAS is that R is extremely case sensitive.
+For example, the "if" statement accepts a string regardless of whether it's lower-case, upper-case or both in SAS, however, it always has be in lowercase in R.
+In R, there are more data types, but in SAS it's either numeric (float, integer) or character.
+
+These are some of the very basic things I noted on R during the class.There's more to learn in R, but I need to go through the class presentation slides and videos.
+I'll probably write more about it in my next blog.
+But, I'm very excited to learn R as it is very widely adopted, hopefully it will be a bit easier to learn than SAS because I've already taken couple of classes in my undergraduate, and our professor also said that it's easier to learn another language if you have already learnt one.
+
+After doing the mid term project, I feel more confident about my SAS skills.
+It was an intense 8 weeks of learning, especially as I had not programmed in SAS before.
+But, it feels good to make it this far.

@@ -1,0 +1,68 @@
+---
+title: "Analyze Airlines flight delays"
+description: |
+  In this week's coding assignment, we had to analyze real data set of different airlines to figure out which flight path consistently was on-time, and which flight path suffered from frequent delays. Based on the actual flight data, we built a regression model to predict if the flight of certain airlines will be delayed or not.
+date: 2019-08-05
+categories: [MSBA, DataScience, Data Analytics, R]
+image: media/flight_delays.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+This week, we switched gears from basics of data wrangling process to build regression models using R programming language.
+Earlier, we learnt regression modeling using SAS programming language, and now we will do the same but using R.
+During the class exercise, we used R to rebuild our previous housing price prediction model which we coded in SAS.
+Both SAS and R regression predicted similar results for the given dataset.
+It was exciting to observe what we could do with SAS programming, we could do almost everything with R.
+It was pretty neat to see that R being an open-source programming language, it is as powerful tool as SAS, and in fact, R produced graphics/charts were better than SAS and needed much less coding.
+This exercise gave us confidence that we can code in both languages, and now I am curious to see whether I will find it easier to code and analyze data with SAS or R, and which programming language I will use more often as both SAS and R have their advantages and disadvantages.
+
+In this week's coding assignment, we had to analyze real data set of different airlines to figure out which flight path consistently was on-time, and which flight path suffered from frequent delays.
+Based on the actual flight data, we built a regression model to predict if the flight of certain airlines will be delayed or not.
+It was very interesting to see all the things that we found out.
+Since we used real data set, I can see our analysis being very useful when we need to choose an airport which can help us avoid a flight delay.
+This could also be helpful for airlines company to predict airline delays caused by various factors.
+Moreover, it could give individual airlines and airports an analysis of their performance thus helping them making a well-assessed decision.
+
+![Flight Delays](media/flight_delays.jpg){fig-alt="Flight Delays" fig-align="center" width="450"}
+
+For our assignment, we pulled the data on [Airline On-Time Performance and Causes of Flight Delays](https://catalog.data.gov/dataset/airline-on-time-performance-and-causes-of-flight-delays-on-time-data) from from Data.gov website for Department of Transportation, where we looked at 570,131 observations with 110 variables.
+From those observations, we looked were able to answer the following questions:
+
+    1. How many flights experienced delays?
+
+    2. What days of the week is the worst days for flight delays?
+
+    3. Which destination airport experienced more delays?
+
+    4. Top 10 flight path that had most delays
+
+1.  Based on the data, we were able to find out that while roughly 82% of the flights were on time, almost 18% of the flights were delayed.
+
+    ![Figure 1](media/question-1.png){fig-alt="Figure 1" fig-align="center" width="450"}
+
+2.  Monday (22.4%), Tuesday (19.17%) and Friday (18.71%) had the most number of flight delays.
+
+    ![Figure 2a](media/question-2a.png){fig-alt="Figure 2a" fig-align="center" width="450"}
+
+    ![Figure 2b](media/question-2b.png){fig-alt="Figure 2b" fig-align="center" width="450"}
+
+3.  We narrowed down the top 10 destination airports that experienced the most delays.
+    Of the top ten, EWR (27%), PHX (26%), LGA (26%), BOS (25%), and SFO (23%) were the top five airports that had most delays.
+
+    ![Figure 3](media/question-3.png){fig-alt="Figure 3" fig-align="center" width="450"}
+
+4.  Below are the top 10 flight paths that had the most flight delays.
+    FWA to ORD route was the top flight to experience most delays.
+
+    ![Figure 4](media/question-4.png){fig-alt="Figure 4" fig-align="center" width="450"}
+
+Working with real data is an exciting experiment; I feel that it makes the process of learning and practicing much easier and practical.
+As excited as I am to add one more programming language to my skill set, regardless that coding is still a bit of a challenge to me, I have come to realize that this challenge is also driving my motivation.
+As Franklin D. Roosevelt once said "A smooth sea never made a skilled sailor", I am up for this challenge.
+Moreover, converting big data into actionable insights, and being able to come up with business solutions is the main thing I wanted to learn from this MSBA program, and being able to do that in class assignments makes my learning journey much more fascinating and interesting.

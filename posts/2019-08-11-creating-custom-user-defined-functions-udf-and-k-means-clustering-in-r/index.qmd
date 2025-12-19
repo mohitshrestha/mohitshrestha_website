@@ -1,0 +1,32 @@
+---
+title: "Creating Custom User Defined Functions (UDF) and K-Means Clustering in R"
+description: |
+  We learned to write user-defined functions, we can now call the function anytime we need to analyze the data, enabling us to remove redundancy and duplication in code. User-defined functions is going to be one of the most powerful tools we'd be learning in R.
+date: 2019-08-11
+categories: [MSBA, DataScience, Data Analytics, R, Custom Functions, User Defined Functions, K-Means, Clustering]
+image: media/R-Functions-tutorial.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+![Image source: https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2017/05/R-Functions-tutorial-1.jpg](media/R-Functions-tutorial.jpg){fig-alt="Image source: https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2017/05/R-Functions-tutorial-1.jpg" fig-align="center" width="450"}
+
+This week we learned about writing our own custom functions in R. Lot of the packages that we use in R are functions created by other people, so learning to write our own functions is going to be really helpful in tackling specific problems to speed up the analyzing process.
+
+For our last week’s assignment, since we didn’t know how to write our own functions, we had to repeat the same chunk of code again and again. But now, as we learned to write user-defined functions, we can now call the function anytime we need to analyze the data, enabling us to remove redundancy and duplication in code. The basic syntax of an R function definition is as follows:
+
+``` r
+function_name <- function (arg_1, arg_2, ...) {
+    statements
+    return(object)
+    }
+```
+
+User-defined functions is going to be one of the most powerful tools we’d be learning in R. This will probably be the first step of writing our own function and deploying for other people to use. Going back to SAS, in SAS, we cannot write our own functions. There were macros, which is a bit similar to functions, but functions are much more powerful. In SAS, we had procedures that were handy. In R, we are required to create our own functions that mimics SAS’s PROC MEANS AND PROC FREQ functions. It was a good practice to recreate what we had previously done in SAS, but now we’d be using R to create similar analyzing task.
+
+Another thing that we learned this class was clustering. We had learned how to create clustering in SAS, and now we’re learning about it in R. Clustering is the first step of unsupervised learning. So it helps in identifying the natural pattern in our dataset. So when we are creating predictive modeling, clustering will come very handy. We learned how to create clustering in R.

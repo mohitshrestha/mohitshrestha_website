@@ -1,0 +1,19 @@
+::: grid
+::: {.g-col-12 .g-col-md-6}
+## Projects
+
+Click [here](projects.qmd) to check out my latest projects.
+
+::: {#landing-page-projects}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+## Blog
+
+Click [here](posts.qmd) see my latest blog posts.
+
+::: {#landing-page-posts}
+:::
+:::
+:::

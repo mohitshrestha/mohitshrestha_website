@@ -1,0 +1,37 @@
+---
+title: "Final project of Term 1"
+description: |
+  The final project for both classes – BAN 7001 Probability and BAN 7002 Analytical – were similar looking at loan data set, but the objectives of the regression model and the datasets were different for each class. For Analytical class, I looked at a different financial institution’s loan dataset and used R to analyze the data, instead of SAS. I followed all the procedures I had been learning and using throughout this term – exploring, removing outliers or extreme values, creating graphs and correlation plots, deriving new variables – that would help us predict and come up with two regression models. I then had to compare between the two and determine which model would give better prediction.
+date: 2019-09-01
+categories: [MSBA, DataScience, Data Analytics, R, Clustering, Predictive, Regression, Models]
+image: media/keep-calm_final-project.png
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+![](media/keep-calm_final-project.png){fig-alt="Keep Calm and Finish your Project" fig-align="center" width="300"}
+
+My last week blog pretty much summed up my first term of the MSBA program at Wake Forest. This one will cover the last project of my first term.
+
+The final project for both classes – BAN 7001 Probability and BAN 7002 Analytical – were similar looking at loan data set, but the objectives of the regression model and the datasets were different for each class.
+
+For Probability class, each student had to develop a predictive regression model to predict the amount of loan that the customer of the bank would request. We had data from the bank, so based on different characteristics of the customers, we would build the model and come up with a prediction model estimating the amount of loan the client would request. For this class, I used SAS to build the prediction model.
+
+For Analytical class, I looked at a different financial institution’s loan dataset and used R to analyze the data, instead of SAS. I followed all the procedures I had been learning and using throughout this term – exploring, removing outliers or extreme values, creating graphs and correlation plots, deriving new variables – that would help us predict and come up with two regression models. I then had to compare between the two and determine which model would give better prediction.
+
+Unlike the Probability class where the objective of the project was to predict the amount of loan, for this class, I had to identify which loan request would be defaulted. For Model 1, I just had five predictors, but for Model 2 I built a larger model and let the model decide which variable to pick using step wise method. Once I had the final model, I compared the accuracy, AIC value, confusion matrix, accuracy, area under the curve, and picked the model which had the best prediction capability of identifying which loan request would probably result into default.
+
+![Figure 1: Correlation Matrix](media/figure-1_correlations_matrix.png){fig-alt="Figure 1: Correlation Matrix" fig-align="center" width="500"}
+
+![Figure 2: Identified Clusters](media/figure-2_identified_clusters.png){fig-alt="Figure 2: Identified Clusters" fig-align="center" width="500"}
+
+For this, I also broke down the dataset into training and test dataset. I built the model using training dataset and used test dataset to validate both Model 1 and Model 2. Once both test and training dataset gave same result, I confirmed which model had better predictability, and it was Model 2 in my case.
+
+![Figure 3: Model Performance Comparsion](media/figure-3_model_performance_comparison.png){fig-alt="Figure 3: Model Performance Comparsion" fig-align="center" width="450"}
+
+I enjoyed working on my final project especially since we had to use both SAS and R for similar datasets. It took me  a lot longer to finish the project than I had initially anticipated, but the process of figuring out things to get to the result was very interesting and challenging.

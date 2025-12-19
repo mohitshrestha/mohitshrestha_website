@@ -1,0 +1,107 @@
+---
+editor: visual
+comments: false
+---
+
+### Services
+
+::: grid
+::: {.g-col-6 .g-col-md-4}
+<div>
+
+<b>DATA ANALYTICS</b>\
+Expert at data wrangling, ETL, and latest analytical tools to conduct through quantitative analysis.
+
+</div>
+
+<div>
+
+<b>VISUALIZATIONS</b>\
+Design and develop compelling data visualizations via a variety of techniques such as Tableau, R, Excel.
+
+</div>
+
+<div>
+
+<b>MACHINE LEARNING</b>\
+Research and implement appropriate Machine Learning algorithms and tools to discover solutions hidden in large data sets.
+
+</div>
+:::
+
+::: {.g-col-6 .g-col-md-4}
+![](media/services.png){fig-align="center" width="300"}
+:::
+
+::: {.g-col-6 .g-col-md-4}
+<div>
+
+<b>BUSINESS INTELLIGENCE</b>\
+Translate data into actionable business insights to drive business values and find business solutions.
+
+</div>
+
+<div>
+
+<b>MARKET RESEARCH</b>\
+Gather and organize information on target markets uncovering key insights.
+
+</div>
+
+<div>
+
+<b>STORYTELLER/ COMMUNICATOR</b>\
+Measure, visualize, and communicate complex analytics to technical and nontechnical audiences with clarity, precision, and influence through a compelling narrative.
+
+</div>
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: grid
+::: {.g-col-6 .g-col-md-4}
+<div>
+
+<b>Phone</b>\
+[+1 (443) 823-4701](tel:+1%20(443)%20823-4701 "+1 (443) 823-4701")
+
+</div>
+
+<div>
+
+<b>Email</b>\
+[contact\@mohitshrestha.com.np](mailto:contact@mohitshrestha.com.np?Subject=Inquiry%20from%20MohitShrestha.com.np%20Website)
+
+</div>
+:::
+
+::: {.g-col-6 .g-col-md-4}
+<div>
+
+<b>Interested in my services? Hire me!</b>\
+
+</div>
+
+<div>
+
+![](media/about.png){fig-align="center" width="172"}
+
+</div>
+:::
+
+::: {.g-col-6 .g-col-md-4}
+<div>
+
+![](media/logos/mohit-logo-2x.png){fig-align="center" width="229"}
+
+</div>
+
+<div>
+
+Data Driven Problem Solver\
+Energy Market Expert
+
+</div>
+:::
+:::

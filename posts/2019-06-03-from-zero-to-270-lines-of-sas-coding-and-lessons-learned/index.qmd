@@ -1,0 +1,132 @@
+---
+title: "From zero to 270 lines of SAS coding and lessons learned"
+description: |
+  It’s my second week of learning to program in SAS. This week, we were introduced to the process of Data Wrangling. Data Wrangling is the process of acquiring, shaping transforming and cleansing data for analysis.
+date: 2019-06-03
+categories: [MSBA, DataScience, Data Analytics, SAS, Coding]
+image: media/design-process.png
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+It's my second week of learning to program in SAS. This week, we were
+introduced to the process of Data Wrangling. Data Wrangling is the
+process of acquiring, shaping transforming and cleansing data for
+analysis. The image below serves as a good guideline of the analytical
+process to follow in creating models for solving almost all business
+problems in an organized manner.
+
+![Figure 1: Design
+Pattern](media/design-process.png){fig-alt="Figure 1: Design Pattern"
+fig-align="center" width="450"}
+
+The assignment for this week was to follow these process to code a
+program in SAS to perform Portfolio Analysis. I am enjoying the format
+of learning to code in SAS and at the same time being introduced to
+basic financial analytical metrics such as Sharpe Ratio used by
+technical traders in the real world. The Sharpe ratio is a measure of
+the excess return relative to the variability of the portfolio return
+and is calculated by:
+
+Sharpe Ratio = (Portfolio Expected Return -- Risk Free rate) / Standard
+Deviation of Portfolio Return
+
+I was fascinated to learn about this simple formula, which helps
+investors in evaluating individual assets or diversified portfolios in
+order to maximize risk-adjusted returns. In just two weeks, with some
+guidelines from our Professor, I have moved on from knowing zero SAS
+code to learning to code 270 lines of SAS program to complete the
+portfolio analysis.
+
+At this moment, I would like to make note of key items for future
+references, that I found little different/strange with learning SAS
+language.
+
+-   While Appending or Merging different structured data sets, SAS looks
+    at all of the possible columns that are available in the output
+    combined data set. If it doesn't find or match the columns, then in
+    the combined data set, it will initialize missing values for
+    unmatched values in those columns.
+
+-   In order to solve this missing values being initialized; we have to
+    rename on import statement using Rename Option. SAS has the ability
+    to Join and Match Merge data assuming they have a common key.
+
+-   SAS by default does the non-match, if we don't specify conditional
+    logic to control the outputting. So, SAS will do a full Outer Join
+    by default, if you are familiar with SQL.
+
+-   To do [**Match Merge in SAS, first we have to pre-sort the
+    data**]{.underline} by the variables that we want to join by.
+    Typically, we don't want to use descending order because if we do
+    use, then in the by statement also we have to specify descending
+    order. Once sorted, we merge the data with DATA step with the By
+    statement.
+
+![Figure 2: Join & Match Merge
+Process](media/sas-join-match-merge.png){fig-alt="Figure 2: Join & Match Merge Process"
+fig-align="center" width="450"}
+
+-   In SAS basically the columns that we are grouping or joining by have
+    to be the same name. So, [**SAS doesn't have the name
+    aliasing**]{.underline} that we do with SQL. Like in SQL, I could
+    have joined custID = ID from another table. [**We can't do that with
+    Data step in SAS, we have to use the RENAME options.**]{.underline}
+
+-   RENAME option syntax is one of those weird SAS syntax thing. In
+    almost every other programming language in the world including SAS,
+    typically in formulas, the thing we are assigning is on the left
+    side of the equal bar. For example if we are renaming region to be
+    country, in SAS we would code it as
+    [**RENAME=(REGION=COUNTRY).**]{.underline} Also. if we had another
+    column to rename then it would be just space, [**no commas
+    needed.**]{.underline} Just type space and old name = new name.
+
+![Figure 3: RENAME Options
+Syntax](media/sas-rename-options-syntax.png){fig-alt="Figure 3: RENAME Options Syntax"
+fig-align="center"}
+
+-   IF THEN DO statement doesn't work in typical procedures steps, so in
+    those cases, we want to use Where Clause. Below image provides the
+    general guideline for Where vs Sub-setting IF.
+
+![Figure 4: Where VS Sub-setting
+IF](media/sas-where-vs-sub-setting-if.png){fig-alt="Figure 4: Where VS Sub-setting IF"
+fig-align="center" width="450"}
+
+-   SAS reads data sets row by row. *N* is an internal counter that
+    allows us to control what record we are on. IF *N* EQ 1 THEN DO:
+    statement would provide access to the first record in a data set.
+
+-   In Proc Means procedure, in order to output the data set, we don't
+    write output or out statement on the first block, but we write it at
+    the bottom after the VAR statement. As shown below. It is mind
+    boggling, why SAS has this weird syntax and it is just not output =
+    or out =. Based on current SAS syntax, we have to write output out =
+    at the bottom. This is one of those strange inconsistency with SAS
+    language, because other procedures like Transpose has out= at the
+    top as shown in code below.
+
+![Figure 5: Example of Proc Means Procedures Output Out=
+Syntax](media/sas-proc-means.png){fig-alt="Figure 5: Example of Proc Means Procedures Output Out= Syntax"
+fig-align="center" width="450"}
+
+-   Lastly, in SAS we use double asterisk (\*\*) instead of caret (\^)
+    when we have to raise something to the power. SAS is probably one of
+    the few language that still does this; others have adopted \^ or
+    shift + 6. As shown below in formula asset_std.
+
+![Figure 6: Example for using Double Asterisk
+(\*\*)](media/sas-use-double-asterisk-than-caret.png){fig-alt="Figure 6: Example for using Double Asterisk (**)"
+fig-align="center" width="450"}
+
+I'm still trying to figure out how to best balance my time, but I was
+definitely better at managing my time and taking good notes this week as
+compared to my first week. Hope I can keep at it!
+
+Cheers to more learning and coding!!!

@@ -1,0 +1,33 @@
+---
+title: "Basics of R programming language"
+description: |
+  Basic Operators and functions, Logical Operators, Conditional Logic, Loops, For Loop, While Loop, Magrittr Pipes, Pipes, Import & Export, Plotting, RMarkdown.
+date: 2019-07-22
+categories: [MSBA, DataScience, Data Analytics, R, Basics of R programming language]
+image: media/basic-operators-functions.png
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+![Basic Operators and Functions](media/basic-operators-functions.png){fig-alt="Basic Operators and Functions" fig-align="center" width="550"}
+
+![Logical Operators](media/logical-operators.png){fig-alt="Logical Operators" fig-align="center" width="550"}
+
+![Conditional Logic](media/conditional-logic.png){fig-alt="Conditional Logic" fig-align="center" width="550"}
+
+![](media/loops-for-loop-while-loop.png){fig-alt="Loops For-loop and While-loop" fig-align="center" width="550"}
+
+![Magrittr Pipes (%\>%)](media/magrittr-pipes.png){fig-alt="Magrittr Pipes (%>%)" fig-align="center" width="550"}
+
+![Import CSV & XLS](media/import-csv-xls.png){fig-alt="Import CSV & XLS" fig-align="center" width="550"}
+
+![Export CSV & XLS](media/export-csv-xls.png){fig-alt="Export CSV & XLS" fig-align="center" width="550"}
+
+![Plotting Utils and GGplot2](media/plotting.png){fig-alt="Plotting Utils and GGplot2" fig-align="center" width="550"}
+
+![RMarkdown & Knitting](media/r-markdown-knitting.png){fig-alt="RMarkdown & Knitting" fig-align="center" width="550"}

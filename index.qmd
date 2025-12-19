@@ -1,0 +1,64 @@
+---
+title: "Mohit Shrestha, MSBA"
+subtitle: "Data Analytics & Business Intelligence Consultant"
+toc: false
+listing: 
+  - id: landing-page-projects
+    contents: projects
+    type: default
+    max-items: 3
+    sort:
+      - "date desc"
+  - id: landing-page-posts
+    contents: posts
+    type: table
+    max-items: 6
+    fields: [date, title]
+    table-hover: true
+    filter-ui: false
+    sort-ui: false
+    sort:
+      - "date desc"
+image: media/profile-pic.jpg
+comments: false
+about: 
+  id: topbr
+  template: trestles
+  image-width: 16em
+  image-shape: round
+  links:
+    - icon: linkedin 
+      text: LinkedIn
+      href: https://www.linkedin.com/in/MohitShrestha/
+    - icon: github 
+      text: GitHub
+      href: https://github.com/MohitShrestha
+    - icon: twitter 
+      text: Twitter
+      href: https://twitter.com/MohitShrestha
+    - icon: envelope 
+      text: Email
+      href: mailto:mohitshrestha@gmail.com
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: false
+  css-class: "my-css-class"
+---
+
+{{< include about.qmd >}}
+
+------------------------------------------------------------------------
+
+{{< include services.qmd >}}
+
+------------------------------------------------------------------------
+
+{{< include landing_page_dynamic_contents.qmd >}}
+
+------------------------------------------------------------------------
+
+{{< include footer.qmd >}}
+
+------------------------------------------------------------------------

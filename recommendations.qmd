@@ -1,0 +1,154 @@
+---
+title: "Recommendations"
+subtitle: "~ a bit more about what others have said about me ~"
+---
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+## Maria Scheller
+
+**Vice President at ICF**
+
+> Mohit has an exceptional ability to think through larger problems and break them down into the component pieces needed to consider the whole, while not loosing track of the larger problem. His genuine interest in problem solving is clear in everything he does, as is his creative and analytical skills. He has an unquestionable work ethic and a great ability to manage his time to get everything done in a timely manner. Mohit is also an excellent person manager, taking the time needed to properly train staff as well as to understand their interests and help them grow in their positions.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/maria_scheller.png")
+```
+:::
+
+
+::: {.column width="70%"}
+
+## Fei Wang
+
+**Head of Market & Customer Intelligence at Depsys**
+
+> Mohit's work ethic is impressive. He is always detail-oriented and willing to put in time and effort to assure timely project deliveries. In addition to being extremely organized with a large amount of data, Mohit also possesses the capability to step back and ask questions about the big picture. He also actively seeks opportunities to improve workflow efficiency, which benefits the wider team as well. Working with Mohit is a great learning experience for team members of varying levels of experience.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/fei_wang.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Nina Peluso
+
+**Policy Advisor at Form Energy**
+
+> Mohit is a fantastic mentor and masterful analyst. He has a unique ability to develop analytical tools, explain them clearly, and keep client needs central to their design. Mohit's commitment and passion for our work bred enthusiasm across the entire team.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/nina_peluso.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Raj Bhana
+
+**Senior Engineer at Exelon**
+
+> Mohit has an amazing work ethic. His commitment to ensuring projects/tasks were both accurate and completed on time made him an invaluable asset to our group. Mohit's love of data analysis and eagerness for learning new analytical approaches meant that he was always improving work-efficiency. In addition, Mohit was always willing to manage and train junior members of the group. I thoroughly enjoyed working with such a motivated and enthusiastic individual.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/raj_bhana.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Imran Lalani
+
+**Economist at US Environmental Protection Agency (EPA)**
+
+> In addition to being a stellar analyst with superb attention to detail and a great work ethic, in the two years we worked together at ICF, Mohit really impressed me with his commitment to helping others in the team. Always willing to stay late to help a colleague learn how to operate a model or explain a concept to a new hire, Mohit was directly responsible for creating a great team environment and helping onboard others and increase their productivity. Extremely organized and always professional, Mohit was able to navigate challenging deadlines and high pressure situations while remaining calm and consistently delivering high quality work products. Being a major contributor to client deliverables, his strong grasp of the material meant he was always able to clearly and effectively communicate findings internally and externally, making him a vital component of the project teams we were both part of. He has been a genuine pleasure to work with and he would be a wonderful asset to any team in the future.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/imran_lalani.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Parag Nathaney
+
+**Senior Market Fundamentals Analyst at Constellation**
+
+> I had the pleasure of interacting with and learning from Mohit at ICF. Mohit is highly analytical, sincere, and hard-working. He is also extremely patient in dealing with questions and has an eye for detail. In addition to these qualities, Mohit is also an attentive listener which helps him tailor solutions to various stakeholder needs.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/parag_nathaney.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Xiaoxuan Hou
+
+**Consultant at Energy and Environmental Economics**
+
+> Mohit was a great consultant to work with and a great mentor to learn from. He knows all the details about the analysis work and was able to articulate the insights in a very neat way. I enjoyed working with Mohit!
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/xiaoxuan_hou.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Dr. Kenneth Townsend
+
+**Elliott Professor of Economics and Business at Hampden-Sydney College**
+
+> Mohit Shrestha is one of the finest analytical thinkers/modelers that I have worked with in the last 25 years. He and I did many projects together, from modeling and forecasting US economic activity to doing regional analysis for a variety of US and international projects. Mohit is adept in R, SAS, EViews, IMPLAN (Impact Analysis), and many other statistical and data analysis environments. He is a superb writer and speaker. There are comparatively few people I would put on my research team, but Mohit Shrestha is certainly one of them.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/kenneth_townsend.png")
+```
+:::
+
+:::: 
+

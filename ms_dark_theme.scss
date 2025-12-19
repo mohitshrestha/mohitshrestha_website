@@ -1,0 +1,52 @@
+/*-- scss:defaults --*/
+
+// default values go here (e.g. certain variable values that should replace theme-defaults)
+
+// use litera as the base
+$theme: "litera" !default;
+
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+// use Lato font if available
+$font-family-sans-serif:  "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+//
+// MS Custom Color Palattes
+//
+$ms_color_1:    #e76254 !default;
+$ms_color_2:    #ef8a47 !default;
+$ms_color_3:    #f7aa58 !default;
+$ms_color_4:    #ffd06f !default;
+$ms_color_5:    #ffe6b7 !default;
+$ms_color_6:    #aadce0 !default;
+$ms_color_7:    #72bcd5 !default;
+$ms_color_8:    #528fad !default;
+$ms_color_9:    #376795 !default;
+$ms_color_10:   #1e466e !default;
+$ms_bg_color:   #d0d4d9 !default;
+$ms_fg_color:    #4a4b7c !default;
+
+// Base document colors
+$body-bg: $ms_color_10;
+$body-color: $ms_color_6;
+$link-color: $ms_color_1;
+$navbar-bg: $ms_color_6;
+$navbar-fg: $ms_color_10;
+$navbar-hl: $ms_color_1;
+$footer-bg: $ms_color_6;
+$footer-fg: $ms_color_10;
+
+// Code blocks
+$code-block-bg: $ms_color_9;
+//$code-block-bg-alpha: -0.35;
+
+/*-- scss:rules --*/
+
+// further CSS rules for specific HTML tags go here
+
+// litera is serif by default: revert to san-serif
+p {
+  font-family: $font-family-sans-serif;
+  fontcolor: $ms_fg_color;
+}

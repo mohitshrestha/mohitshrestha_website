@@ -1,0 +1,25 @@
+---
+title: "Last week of First term"
+description: |
+  Within three months, we tackled a lot of business scenario, we learnt a lot of techniques and procedures, and we took on numerous business problems from stock market analysis and wine quality analysis to predicting airlines delay and working with regression model on home equity loan. We tackled real world data problems by simultaneously learning and using various analytical tools. Now I feel that we have the basic foundation and recipes to analyze any business problems, softwares, tools and concept to solve those problems and come up with business solutions that are practical.
+date: 2019-08-27
+categories: [MSBA, DataScience, Data Analytics, R]
+image: media/itchy_feet.png
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+I always knew the MSBA program would be a bit of a challenge for me, given that I had no previous coding background. Also, the fast-paced learning experience hasn’t been that easy as well. These short three months of learning has been intense especially since I am back to school routine after a hiatus, and also because the online classes are optimized for maximum learning.
+
+This is the final week for this term, and I’ve been swamped with a lot of projects – group project, probability and statistics project to find home equity loan, and two analytics projects with R – that I need to finish by next week. So far I’ve been working on the probability project, which I need to wrap up so that I can move on the two analytics projects.
+
+Within three months, we tackled a lot of business scenario, we learnt a lot of techniques and procedures, and we took on numerous business problems from stock market analysis and wine quality analysis to predicting airlines delay and working with regression model on home equity loan. We tackled real world data problems by simultaneously learning and using various analytical tools. Now I feel that we have the basic foundation and recipes to analyze any business problems, softwares, tools and concept to solve those problems and come up with business solutions that are practical.
+
+So far, it’s been a great learning journey. There were definitely times when I felt overwhelmed (like this week) with all the work that I had to finish. But as I realize all the new things that I am learning, I get very excited as well. So, cheers to more of learning ahead!!!!
+
+![Image source: https://i0.wp.com/cmosshoptalk.com/wp-content/uploads/2020/04/Decorative-Lettering.png](media/itchy_feet.png){fig-alt="Image source: https://i0.wp.com/cmosshoptalk.com/wp-content/uploads/2020/04/Decorative-Lettering.png" fig-align="center" width="450"}

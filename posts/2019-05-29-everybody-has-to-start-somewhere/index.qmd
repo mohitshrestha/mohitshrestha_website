@@ -1,0 +1,26 @@
+---
+title: "Everybody has to start somewhere"
+description: |
+  Everybody has to start somewhere. You have your whole future ahead of you. Perfection doesn't happen right away - Haruki Murakami
+date: 2019-05-29
+categories: [MSBA, DataScience, Data Analytics]
+image: media/boy-rocket-wall-cloudy-760.jpg
+code-fold: false
+draft: false
+citation:
+  type: post-weblog
+---
+
+![Image Source: https://www.callcentrehelper.com/images/stories/2018/01/boy-rocket-wall-cloudy-760.jpg](media/boy-rocket-wall-cloudy-760.jpg){fig-alt="Image Source: https://www.callcentrehelper.com/images/stories/2018/01/boy-rocket-wall-cloudy-760.jpg" fig-align="center" width="450"}
+
+> **"Everybody has to start somewhere. You have your whole future ahead of you. Perfection doesn't happen right away."** \~ Haruki Murakami
+
+Everybody has to start somewhere, and this is my start. A start to my master's degree in Business Analytics, a start to blogging, a start to a new learning journey. I am very excited as I have been wanting to do this for a while, and I'm nervous as well because it has been eight years since I graduated and going back to being a student is a bit intimidating. I also don't have a strong coding and programming background, so this makes it more challenging for me. But this is what I want to do, and I will give my best to get the most out of this program.
+
+I have been in a similar position in the past. I double majored in Mathematical Economics and Applied Mathematics for my undergraduate degree, but right after graduation, I joined energy consulting. I jumped into a completely different industry than what I studied, so I had to do a lot of extra work just to understand the fundamentals of the electric/energy market. It was a steep learning curve, especially the first few months, but once I learned the basics, I was able to succeed in my job. I think I am in a similar situation now, where I know I will have to put in extra effort to learn the programming language, but I know this will eventually help me in my future courses, and in my career in the long term.
+
+I can only imagine the hard work, perseverance and sacrifice that is required to complete this online degree. Already in the first week, it was challenging to complete my assignments amidst my high school reunion that me and my friends had planned for months, before I enrolled in this program. But I knew I had to get it done, not because I had to submit the assignment to my professor, but because I have made a promise to myself to learn and do my best.
+
+![Image Source: https://www.smartdatacollective.com/wp-content/uploads/2018/08/business-intelligence-big-data-768x512.jpg](media/business-intelligence-big-data.jpg){fig-alt="https://www.smartdatacollective.com/wp-content/uploads/2018/08/business-intelligence-big-data-768x512.jpg" fig-align="center" width="450"}
+
+I am looking forward to this learning journey that I have embarked upon, and see how far I will reach from this very first ever blog post ever.

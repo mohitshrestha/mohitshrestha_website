@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Mohit Shrestha</title>
+<link>https://www.mohitshrestha.com.np/posts.html</link>
+<atom:link href="https://www.mohitshrestha.com.np/posts.xml" rel="self" type="application/rss+xml"/>
+<description>A personal website on the exploration of open data and other adventures.</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Sun, 01 Sep 2019 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Final project of Term 1</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-09-01-final-project-of-term-1/</link>
+  <description><![CDATA[ The final project for both classes – BAN 7001 Probability and BAN 7002 Analytical – were similar looking at loan data set, but the objectives of the regression model and the datasets were different for each class. For Analytical class, I looked at a different financial institution’s loan dataset and used R to analyze the data, instead of SAS. I followed all the procedures I had been learning and using throughout this term – exploring, removing outliers or extreme values, creating graphs and correlation plots, deriving new variables – that would help us predict and come up with two regression models. I then had to compare between the two and determine which model would give better prediction. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <category>Clustering</category>
+  <category>Predictive</category>
+  <category>Regression</category>
+  <category>Models</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-09-01-final-project-of-term-1/</guid>
+  <pubDate>Sun, 01 Sep 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-09-01-final-project-of-term-1/media/keep-calm_final-project.png" medium="image" type="image/png" height="138" width="144"/>
+</item>
+<item>
+  <title>Last week of First term</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-08-27-last-week-of-first-term/</link>
+  <description><![CDATA[ Within three months, we tackled a lot of business scenario, we learnt a lot of techniques and procedures, and we took on numerous business problems from stock market analysis and wine quality analysis to predicting airlines delay and working with regression model on home equity loan. We tackled real world data problems by simultaneously learning and using various analytical tools. Now I feel that we have the basic foundation and recipes to analyze any business problems, softwares, tools and concept to solve those problems and come up with business solutions that are practical. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-08-27-last-week-of-first-term/</guid>
+  <pubDate>Tue, 27 Aug 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-08-27-last-week-of-first-term/media/itchy_feet.png" medium="image" type="image/png" height="97" width="144"/>
+</item>
+<item>
+  <title>Text Analytics</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-08-19-text-analytics/</link>
+  <description><![CDATA[ “Text Analytics, also known as text mining, is the process of examining large collections of written resources to generate new information, and to transform the unstructured text into structured data for use in further analysis. Text mining identifies facts, relationships and assertions that would otherwise remain buried in the mass of textual big data” ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <category>Text Analytics</category>
+  <category>Natural Language Processing</category>
+  <category>NLP</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-08-19-text-analytics/</guid>
+  <pubDate>Mon, 19 Aug 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-08-19-text-analytics/media/word_cloud_top100_words.png" medium="image" type="image/png" height="91" width="144"/>
+</item>
+<item>
+  <title>Creating Custom User Defined Functions (UDF) and K-Means Clustering in R</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-08-11-creating-custom-user-defined-functions-udf-and-k-means-clustering-in-r/</link>
+  <description><![CDATA[ We learned to write user-defined functions, we can now call the function anytime we need to analyze the data, enabling us to remove redundancy and duplication in code. User-defined functions is going to be one of the most powerful tools we’d be learning in R. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <category>Custom Functions</category>
+  <category>User Defined Functions</category>
+  <category>K-Means</category>
+  <category>Clustering</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-08-11-creating-custom-user-defined-functions-udf-and-k-means-clustering-in-r/</guid>
+  <pubDate>Sun, 11 Aug 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-08-11-creating-custom-user-defined-functions-udf-and-k-means-clustering-in-r/media/R-Functions-tutorial.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Analyze Airlines flight delays</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-08-05-analyze-airlines-flight delays/</link>
+  <description><![CDATA[ In this week’s coding assignment, we had to analyze real data set of different airlines to figure out which flight path consistently was on-time, and which flight path suffered from frequent delays. Based on the actual flight data, we built a regression model to predict if the flight of certain airlines will be delayed or not. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-08-05-analyze-airlines-flight delays/</guid>
+  <pubDate>Mon, 05 Aug 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-08-05-analyze-airlines-flight delays/media/flight_delays.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Data Wrangling 2.0 with R</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-07-29-data-wrangling-2-0-with-r/</link>
+  <description><![CDATA[ Now this week is data wrangling 2.0 with R, where we’ll be taking a step further into wrangling and look at data structuring where we will be using more techniques like joining, transposing to analyze the data better. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <category>Data Wrangling</category>
+  <category>Dplyr</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-07-29-data-wrangling-2-0-with-r/</guid>
+  <pubDate>Mon, 29 Jul 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-07-29-data-wrangling-2-0-with-r/media/figure-1.png" medium="image" type="image/png" height="73" width="144"/>
+</item>
+<item>
+  <title>Basics of R programming language</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-07-22-basics-of-r-programming-language/</link>
+  <description><![CDATA[ Basic Operators and functions, Logical Operators, Conditional Logic, Loops, For Loop, While Loop, Magrittr Pipes, Pipes, Import & Export, Plotting, RMarkdown. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <category>Basics of R programming language</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-07-22-basics-of-r-programming-language/</guid>
+  <pubDate>Mon, 22 Jul 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-07-22-basics-of-r-programming-language/media/basic-operators-functions.png" medium="image" type="image/png" height="62" width="144"/>
+</item>
+<item>
+  <title>The journey of learning R programming language begins</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-07-22-the-journey-of-learning-r-programming-language-begins/</link>
+  <description><![CDATA[ Regardless of what language it is, the analytic process of every programming language is the same. So since we’ve already learned programming, learning R would be similar to SAS, so hopefully getting used to the syntax of R would be a bit easier as we’ve already learnt SAS. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>R</category>
+  <category>SAS vs R vs Python</category>
+  <category>SAS</category>
+  <category>Python</category>
+  <category>Why learn R</category>
+  <category>Programming languages</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-07-22-the-journey-of-learning-r-programming-language-begins/</guid>
+  <pubDate>Mon, 22 Jul 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-07-22-the-journey-of-learning-r-programming-language-begins/media/why-learn-r.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Wrapping up SAS with mid-term project and kicking off R</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-07-15-wrapping-up-sas-and-beginning-r-programming-language/</link>
+  <description><![CDATA[ This is Week 8 of the MSBA program, an end to our learning of SAS programming language and beginning of R programming language. Our SAS learning journey ended with a mid-term project of analyzing data and building predictive multiple linear regression models using SAS. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>R</category>
+  <category>Coding</category>
+  <category>Predictive</category>
+  <category>Multiple Linear Regression</category>
+  <category>Regression</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-07-15-wrapping-up-sas-and-beginning-r-programming-language/</guid>
+  <pubDate>Mon, 15 Jul 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-07-15-wrapping-up-sas-and-beginning-r-programming-language/media/sas-to-r.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Life’s a marathon, not a sprint</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-07-08-lifes-a-marathon-not-a-sprint/</link>
+  <description><![CDATA[ A mini break to recharge mind and body for better learning. “Keep close to Nature’s heart… and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.” ~ John Muir ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>Coding</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-07-08-lifes-a-marathon-not-a-sprint/</guid>
+  <pubDate>Mon, 08 Jul 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-07-08-lifes-a-marathon-not-a-sprint/media/alamere-fall.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Building Multiple Linear Regression Model</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-07-01-building-multiple-linear-regression-model/</link>
+  <description><![CDATA[ This week we studied about Estimation and Regression. For estimation, we specifically looked at T-Test or Student T-Test, and for regression, we particularly looked at linear regression. We studied T-Test to evaluate differences in the means ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>Coding</category>
+  <category>Regression</category>
+  <category>Multiple Linear Regression</category>
+  <category>Models</category>
+  <category>Student T-Test</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-07-01-building-multiple-linear-regression-model/</guid>
+  <pubDate>Mon, 01 Jul 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-07-01-building-multiple-linear-regression-model/media/5-key-assumptions-of-regression.png" medium="image" type="image/png" height="43" width="144"/>
+</item>
+<item>
+  <title>A beginning to unsupervised machine learning</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-06-23-a-beginning-to-unsupervised-machine-learning/</link>
+  <description><![CDATA[ Last week we learned about using macros in SAS. To be honest, in the beginning, I found it really difficult, but after reviewing it few times even after submitting my assignment, I now feel a bit more comfortable using it. But then again, classes are moving very fast; we’re jumping from one topic to another in a week. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>Coding</category>
+  <category>Unsupervised Machine Learning</category>
+  <category>ML</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-06-23-a-beginning-to-unsupervised-machine-learning/</guid>
+  <pubDate>Sun, 23 Jun 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-06-23-a-beginning-to-unsupervised-machine-learning/media/quote-a-little-progress-each-day-adds-up-to-big-results.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Macros - the key to efficient data processing</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-06-17-macros-the-key-to-efficient-data-processing/</link>
+  <description><![CDATA[ My first introduction to Macro was in Microsoft Excel with VBA Macros. I haven’t used it extensively, but my last job required me to work with macros on few occasions. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>Coding</category>
+  <category>Macros</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-06-17-macros-the-key-to-efficient-data-processing/</guid>
+  <pubDate>Mon, 17 Jun 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-06-17-macros-the-key-to-efficient-data-processing/media/74463-2.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Struggle with PROC SQL in SAS</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-06-10-struggle-with-proc-sql-in-sas/</link>
+  <description><![CDATA[ This week had a good surprise. We learned about data wrangling in SAS using SQL language. I wasn’t expecting to learn SQL in the MSBA program as the program is primarily focused on SAS and R languages. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>Coding</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-06-10-struggle-with-proc-sql-in-sas/</guid>
+  <pubDate>Mon, 10 Jun 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-06-10-struggle-with-proc-sql-in-sas/media/Frederick_Douglass_struggle_quotes.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>From zero to 270 lines of SAS coding and lessons learned</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-06-03-from-zero-to-270-lines-of-sas-coding-and-lessons-learned/</link>
+  <description><![CDATA[ It’s my second week of learning to program in SAS. This week, we were introduced to the process of Data Wrangling. Data Wrangling is the process of acquiring, shaping transforming and cleansing data for analysis. ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <category>SAS</category>
+  <category>Coding</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-06-03-from-zero-to-270-lines-of-sas-coding-and-lessons-learned/</guid>
+  <pubDate>Mon, 03 Jun 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-06-03-from-zero-to-270-lines-of-sas-coding-and-lessons-learned/media/design-process.png" medium="image" type="image/png" height="100" width="144"/>
+</item>
+<item>
+  <title>Everybody has to start somewhere</title>
+  <dc:creator>Mohit Shrestha</dc:creator>
+  <link>https://www.mohitshrestha.com.np/posts/2019-05-29-everybody-has-to-start-somewhere/</link>
+  <description><![CDATA[ Everybody has to start somewhere. You have your whole future ahead of you. Perfection doesn’t happen right away - Haruki Murakami ]]></description>
+  <category>MSBA</category>
+  <category>DataScience</category>
+  <category>Data Analytics</category>
+  <guid>https://www.mohitshrestha.com.np/posts/2019-05-29-everybody-has-to-start-somewhere/</guid>
+  <pubDate>Wed, 29 May 2019 07:00:00 GMT</pubDate>
+  <media:content url="https://www.mohitshrestha.com.np/posts/2019-05-29-everybody-has-to-start-somewhere/media/boy-rocket-wall-cloudy-760.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

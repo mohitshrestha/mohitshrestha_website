@@ -1,0 +1,25 @@
+/* css styles */
+
+.navbar-logo { max-height: 75px; }
+
+/*
+.nav-tabs {
+    --bs-nav-tabs-link-active-color: #3F88C5;
+}
+
+Add:
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Pacifico&display=swap');
+
+h1.title {
+  font-family: "Pacifico";
+  font-size: 30px;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&family=Helvetica&display=swap');
+
+h1.title {
+  font-family: "Helvetica";
+  font-size: 30px;
+}
