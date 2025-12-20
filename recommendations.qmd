@@ -7,6 +7,42 @@ subtitle: "~ a bit more about what others have said about me ~"
 
 ::: {.column width="70%"}
 
+## Prem Durairaj
+
+**Co-Founder / Head of Program Implementation at Data Elevates**
+
+> I'm grateful to have worked with Mohit now on several of Data Elevates' projects, with him taking a leading role in developing dashboards to ETL pipelines to a range of other activities. His ability to work with clients, meet deadlines, and critically problem solve issues are certainly held in high regard by my organization. He is highly recommended, and has been a team player throughout our various consulting engagements.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/prem_durairaj.png")
+```
+:::
+
+::: {.column width="70%"}
+
+## Alexander (Xan) Paxton
+
+**Head of Data Insights at Data Elevates**
+
+> I’ve had the pleasure of working with Mohit on multiple engagements, and he consistently brings a rare combination of strategic thinking, reliability, and genuine partnership to his work. He is thoughtful and diligent in how he approaches complex problems, communicates technical concepts clearly, and follows through with a high level of professionalism. Mohit is someone you can trust to take ownership, add value quickly, and represent a project well with clients and partners alike. I’m very much looking forward to working with him again and would highly recommend him to any team looking for a strong, dependable consultant.
+
+:::
+
+::: {.column width="30%"}
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("media/recommendations/alexander_xan_paxton.png")
+```
+:::
+
+::: {.column width="70%"}
+
 ## Maria Scheller
 
 **Vice President at ICF**
@@ -22,7 +58,6 @@ subtitle: "~ a bit more about what others have said about me ~"
 knitr::include_graphics("media/recommendations/maria_scheller.png")
 ```
 :::
-
 
 ::: {.column width="70%"}
 
